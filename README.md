@@ -1,3 +1,3 @@
 # README
 
-# Ruby Girls Sign up System
+# Rails Girls Jr Sign up System
