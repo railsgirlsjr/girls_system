@@ -12,7 +12,22 @@
   <body>
     <div class="container">
       <%= render 'shared/header' %>
+
+      <% if notice %>
+        <div class="uk-alert-success" uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p><%= notice %></p>
+        </div>
+      <% end %>
+      <% if alert %>
+        <div class="uk-alert-danger" uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p><%= alert %></p>
+        </div>
+      <% end %>
+
       <%= yield %>
+
     </div>
   </body>
 </html>
