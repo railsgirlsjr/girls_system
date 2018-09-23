@@ -15,7 +15,7 @@
       <ul class="uk-navbar-nav">
         <% if user_signed_in? %>
           <li>
-            <a href="#"><%= current_user.nickname %></a>
+            <%= link_to gravatar_for(current_user, size: 35), '#', class: 'gravatar_img' %>
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
                 <li><%= link_to 'Profile', edit_user_registration_path %></li>

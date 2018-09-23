@@ -52,6 +52,12 @@
       </div>
     <% end %>
 
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target="_blank">change</a>
+    </div>
+
+
     <h3><%= t('.cancel_my_account') %></h3>
 
     <p>
